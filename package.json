@@ -1,0 +1,17 @@
+{
+  "dependencies": {
+    "chalk": "^2.4.1",
+    "express": "^4.16.4",
+    "tiny-worker": "^2.1.2"
+  },
+  "scripts": {
+    "withCluster": "nodemon index.js",
+    "noCluster": "nodemon server.js",
+    "withPm2": "pm2 start pm2.js -i 0",
+    "withWebWokerThreads": "nodemon webWorkerThreads.js"
+  },
+  "name": "enhancing-node-performance",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT"
+}
